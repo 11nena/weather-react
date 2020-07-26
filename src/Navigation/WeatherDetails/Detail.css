@@ -1,0 +1,13 @@
+table {
+    color: white;
+    font-size: 12px;
+    width: 100%;
+}
+
+tr, td {
+    padding: 8px;
+}
+
+.detail-value {
+    text-align: right;
+}

@@ -1,0 +1,24 @@
+.weather-forecast {
+  text-align: center;
+  font-size: 14px;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.weather-forecast p {
+  margin: 0;
+}
+
+.weather-forecast span {
+  font-size: 25px;
+}
+
+/*div.row {
+  margin: 15px 20px;
+}*/
+
+h3.forecast-heading {
+  padding: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}

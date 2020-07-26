@@ -1,0 +1,16 @@
+li {
+  list-style-type: none;
+  padding: 8px;
+}
+
+li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #f1f2f2;
+  padding: 8px;
+}
+
+/*li a:hover {
+  text-decoration: none;
+  color: #f1f2f2;
+}*/
