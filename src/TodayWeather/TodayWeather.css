@@ -1,6 +1,7 @@
 .row .today-weather {
   padding-top: 160px;
 }
+
 h1 {
   font-size: 54px;
 }
@@ -42,7 +43,7 @@ div.temperature {
 
 button {
   border: 1px solid #464360;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: #464360;
   color: #fff1eb;
   font-size: 14px;

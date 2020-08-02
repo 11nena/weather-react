@@ -1,8 +1,11 @@
 import React from "react";
 
-import "./TodayWeather.css";
+
 import BalonImage from "../BalonImage/BalonImage";
 import ReactAnimatedWeather from 'react-animated-weather';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import "./TodayWeather.css";
 
 export default function TodayWeather() {
     return (

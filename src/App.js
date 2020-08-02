@@ -3,6 +3,7 @@ import Navigation from "./Navigation/Navigation";
 import Forecast from "./Forecast/Forecast";
 import TodayWeather from "./TodayWeather/TodayWeather";
 
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 function App() {
