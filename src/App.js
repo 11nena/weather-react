@@ -15,7 +15,7 @@ function App() {
         </div>
         <div className="col-8">
           <Forecast />
-          <TodayWeather />
+          <TodayWeather defaultCity="London" />
         </div>
       </div>
     </div>
