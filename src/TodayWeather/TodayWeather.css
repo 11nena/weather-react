@@ -37,8 +37,8 @@ div.temperature {
   padding-right: 0;
 }
 
-p.weather-date{
-  font-size: 10px;
+.weather-date{
+  font-size: 8px;
 }
 
 .row .units {
