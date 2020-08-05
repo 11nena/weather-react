@@ -1,17 +1,19 @@
 import React from "react";
 
-import Logo from "./Logo";
-import Search from "./Search/Search";
-import Cities from "./Cities/Cities";
-import WeatherDetails from "./WeatherDetails/WeatherDetails";
+
+import Search from "./Search";
+import Cities from "./Cities";
+import WeatherDetails from "./WeatherDetails";
 
 import 'bootstrap/dist/css/bootstrap.css';
-import "../Navigation/Navigation.css";
+import "./Navigation.css";
 
 export default function Navigation() {
     return (
         <div className="nav-wrapper">
-            <Logo />
+            <div className="appLogo">
+                <p>HiWeather</p>
+            </div>
             <Search />
             <Cities />
             <WeatherDetails />

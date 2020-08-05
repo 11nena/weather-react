@@ -4,7 +4,7 @@ import axios from "axios";
 
 import "./Detail.css";
 
-export default function Details(props) {
+export default function Detail(props) {
     const [ready, setReady] = useState(false);
     const [weatherData, setWeatherData] = useState({});
     function handleResponse(response) {
@@ -42,8 +42,8 @@ export default function Details(props) {
         );
     } else {
         const apiKey = "6cc7179aae3be83895e44fc50c0ec1da";
-        let city = "London";
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city},uk&appid=${apiKey}&units=metric`;
+        let city = props.defaultCity;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
         axios.get(url).then(handleResponse);
 

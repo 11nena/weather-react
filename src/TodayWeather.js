@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 
-import BalonImage from "../BalonImage/BalonImage";
+import BalonImage from "./BalonImage";
 //import ReactAnimatedWeather from 'react-animated-weather';
 import FriendlyDate from "./FriendlyDate";
 

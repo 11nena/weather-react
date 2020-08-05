@@ -1,7 +1,7 @@
 import React from 'react';
-import Navigation from "./Navigation/Navigation";
-import Forecast from "./Forecast/Forecast";
-import TodayWeather from "./TodayWeather/TodayWeather";
+import Navigation from "./Navigation";
+import Forecast from "./Forecast";
+import TodayWeather from "./TodayWeather";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -15,7 +15,7 @@ function App() {
         </div>
         <div className="col-8">
           <Forecast />
-          <TodayWeather defaultCity="London" />
+          <TodayWeather defaultCity="Paris" />
         </div>
       </div>
     </div>

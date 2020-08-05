@@ -1,5 +1,5 @@
 import React from "react";
-import imageBalon from "../images/baloon.png"
+import imageBalon from "./images/baloon.png";
 
 import "./BalonImage.css"
 
