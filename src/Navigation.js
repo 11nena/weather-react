@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 
 import Search from "./Search";
@@ -14,9 +14,9 @@ export default function Navigation() {
             <div className="appLogo">
                 <p>HiWeather</p>
             </div>
-            <Search />
+            <Search defaultCity="Paris" />
             <Cities />
             <WeatherDetails />
         </div>
     );
-}
+}*/

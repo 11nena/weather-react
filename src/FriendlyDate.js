@@ -1,7 +1,8 @@
-import react from "react";
+import React from 'react';
 
 export default function FriendlyDate(props) {
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"];
+    console.log(props.date);
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[props.date.getDay()];
     let hours = props.date.getHours();
     let minutes = props.date.getMinutes();
@@ -12,5 +13,5 @@ export default function FriendlyDate(props) {
         minutes = `0${minutes}`;
     }
 
-    return `${day} ${hours}:${minutes}`
+    return (`${day} ${hours}:${minutes}`);
 }
