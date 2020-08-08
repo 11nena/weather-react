@@ -2,8 +2,9 @@ import React from "react";
 
 
 import BalonImage from "./BalonImage";
-//import ReactAnimatedWeather from 'react-animated-weather';
+
 import FriendlyDate from "./FriendlyDate";
+import WeatherIcon from "./WeatherIcon";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import "./TodayWeather.css";
@@ -39,9 +40,7 @@ export default function TodayWeather(props) {
                     <FriendlyDate className="weather-date" date={props.data.date} />
                 </div>
                 <div className="col-5">
-                    <img src={props.data.iconUrl}
-                        alt={props.data.description}
-                    />
+                    <WeatherIcon code={props.data.icon} />
                     <p>{props.data.description}</p>
                 </div>
             </div>
