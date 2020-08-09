@@ -1,79 +1,34 @@
-import React from "react";
-import ReactAnimatedWeather from 'react-animated-weather';
+import React, { useState } from "react";
+import axios from "axios";
+
+import WeatherForecastPreview from "./WeatherForecastPreview";
+//import ReactAnimatedWeather from 'react-animated-weather';
 
 import "./Forecast.css";
 
-export default function Forecast() {
-    return (
-        <div>
-            <h3 className="forecast-heading">forecast</h3>
-            <div className="row">
-                <div className="col-2 weather-forecast">
-                    <strong>time</strong>
-                    <p>
-                        <ReactAnimatedWeather
-                            icon={"CLEAR_DAY"}
-                            color={"goldenrod"}
-                            size={30}
-                            animate={true} />
-                    </p>
-                    <p>
-                        <strong>20°</strong>19°
-          </p>
-                </div>
-                <div className="col-2 weather-forecast">
-                    <strong>time</strong>
-                    <p>
-                        <ReactAnimatedWeather
-                            icon={"PARTLY_CLOUDY_DAY"}
-                            color={"gray"}
-                            size={30}
-                            animate={true} />
-                    </p>
-                    <p>
-                        <strong>20°</strong>19°
-          </p>
-                </div>
-                <div className="col-2 weather-forecast">
-                    <strong>time</strong>
-                    <p>
-                        <ReactAnimatedWeather
-                            icon={"CLEAR_DAY"}
-                            color={"goldenrod"}
-                            size={30}
-                            animate={true} />
-                    </p>
-                    <p>
-                        <strong>20°</strong>19°
-          </p>
-                </div>
-                <div className="col-2 weather-forecast">
-                    <p><strong>time</strong></p>
-                    <p>
-                        <ReactAnimatedWeather
-                            icon={"CLEAR_DAY"}
-                            color={"goldenrod"}
-                            size={30}
-                            animate={true} />
-                    </p>
-                    <p>
-                        <strong>20°</strong>19°
-          </p>
-                </div>
-                <div className="col-2 weather-forecast">
-                    <p><strong>time</strong></p>
-                    <p>
-                        <ReactAnimatedWeather
-                            icon={"CLOUDY"}
-                            color={"gray"}
-                            size={30}
-                            animate={true} />
-                    </p>
-                    <p>
-                        <strong>20°</strong>19°
-                    </p>
-                </div>
-            </div>
+export default function Forecast(props) {
+    let [loaded, setLoaded] = useState(false);
+    let [forecast, setForecast] = useState(null);
+
+    function handleForecastResponse(response) {
+        setForecast(response.data);
+        setLoaded(true);
+    }
+
+    if (loaded && props.city === forecast.city.name) {
+        console.log(forecast);
+        return <div className="row">
+            <WeatherForecastPreview data={forecast.list[0]} />
+            <WeatherForecastPreview data={forecast.list[1]} />
+            <WeatherForecastPreview data={forecast.list[2]} />
+            <WeatherForecastPreview data={forecast.list[3]} />
+            <WeatherForecastPreview data={forecast.list[4]} />
         </div>
-    );
+    } else {
+        const apiKey = "6cc7179aae3be83895e44fc50c0ec1da";
+        let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
+        axios.get(url).then(handleForecastResponse);
+
+        return null;
+    }
 }

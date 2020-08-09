@@ -67,7 +67,8 @@ function App(props) {
             </div>
           </div>
           <div className="col-8">
-            <Forecast />
+            <h3 className="forecast-heading">forecast</h3>
+            <Forecast city={weatherData.cityName} />
             <TodayWeather data={weatherData} />
           </div>
         </div>
