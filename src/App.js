@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import axios from "axios";
 
 import Search from "./Search";
-import Cities from "./Cities";
+//import Cities from "./Cities";
+import BalonImage from "./BalonImage";
 import WeatherDetails from "./WeatherDetails";
 import Forecast from "./Forecast";
 import TodayWeather from "./TodayWeather";
@@ -62,7 +63,7 @@ function App(props) {
                 <p>HiWeather</p>
               </div>
               <Search handleForm={handleSubmit} handleInput={handleCityChange} />
-              <Cities />
+              <BalonImage data={weatherData.temperature} />
               <WeatherDetails data={weatherData} />
             </div>
           </div>

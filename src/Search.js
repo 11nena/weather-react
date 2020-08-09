@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { IconContext } from "react-icons";
+
 
 
 import "./Search.css";
@@ -9,7 +12,9 @@ export default function Search(props) {
         <div>
             <form onSubmit={props.handleForm}>
                 <input type="search" className="search-input" autofocus="on" onChange={props.handleInput} placeholder="City" />
-                <input type="submit" className="buttonSubmit" value="🔍" placeholder="&#61447;" />
+                <button type="submit" className="buttonSubmit" >
+                    🔍
+                </button>
             </form>
         </div>
     );

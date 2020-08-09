@@ -1,7 +1,7 @@
 import React from "react";
 
 
-import BalonImage from "./BalonImage";
+//import BalonImage from "./BalonImage";
 import WeatherTemperature from "./WeatherTemperature";
 import FriendlyDate from "./FriendlyDate";
 import WeatherIcon from "./WeatherIcon";
@@ -27,9 +27,7 @@ export default function TodayWeather(props) {
         <div className="card-body">
             <div className="row">
                 <h3 className="today-heading">today</h3>
-                <button className="current">📍</button>
             </div>
-            <BalonImage />
             <div className="row today-weather">
                 <WeatherTemperature celsius={props.data.temperature} />
 

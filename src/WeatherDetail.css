@@ -2,6 +2,7 @@ table {
     color: white;
     font-size: 12px;
     width: 100%;
+    padding: 30px;
 }
 
 tr, td {
