@@ -1,3 +1,17 @@
-.balon-img{   
-    margin: 30px; 
+
+
+.imageBalonOrange {
+    fill: orange;
+     margin-left: 50px; 
 }
+
+.imageBalonBlue {
+    fill: blue;
+     margin-left: 50px; 
+}
+
+.imageBalonYellow{
+    fill: yellow;
+     margin-left: 50px; 
+}
+

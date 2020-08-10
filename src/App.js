@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import axios from "axios";
 
 import Search from "./Search";
-//import Cities from "./Cities";
 import BalonImage from "./BalonImage";
 import WeatherDetails from "./WeatherDetails";
 import Forecast from "./Forecast";
 import TodayWeather from "./TodayWeather";
 
 import 'bootstrap/dist/css/bootstrap.css';
-import "./Navigation.css";
+
 import './App.css';
 
 
@@ -36,7 +35,6 @@ function App(props) {
 
   function search() {
     const apiKey = "6cc7179aae3be83895e44fc50c0ec1da";
-    //let city = props.defaultCity;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city},&appid=${apiKey}&units=metric`;
 
     axios.get(url).then(handleResponse);

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import WeatherForecastPreview from "./WeatherForecastPreview";
-//import ReactAnimatedWeather from 'react-animated-weather';
+
 
 import "./Forecast.css";
 
