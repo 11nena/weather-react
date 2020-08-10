@@ -11,9 +11,8 @@ export default function Search(props) {
         <div>
             <form onSubmit={props.handleForm}>
                 <input type="search" className="search-input" autofocus="on" onChange={props.handleInput} placeholder="City" />
-                <button type="submit" className="buttonSubmit" >
-                    S
-                </button>
+                <input type="submit" className="buttonSubmit" value="🔍">
+                </input>
             </form>
         </div>
     );
