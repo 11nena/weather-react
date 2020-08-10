@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 
@@ -12,7 +12,7 @@ export default function Search(props) {
             <form onSubmit={props.handleForm}>
                 <input type="search" className="search-input" autofocus="on" onChange={props.handleInput} placeholder="City" />
                 <button type="submit" className="buttonSubmit" >
-                    🔍
+                    <span>🔍</span>
                 </button>
             </form>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import imageBalonSvg from "./images/baloon.svg";
+//import imageBalonSvg from "./images/baloon.svg";
 import "./BalonImage.css";
 
 export default function BalonImage(props) {
