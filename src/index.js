@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <App defaultCity="London" />
+    <p>Coded by Romana Bezdekova. It is <a href="https://github.com/11nena/weather-react">open source.</a></p>
   </React.StrictMode>,
   document.getElementById('root')
 );
